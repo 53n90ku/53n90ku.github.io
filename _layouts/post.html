@@ -15,13 +15,6 @@ layout: default
       {%- if author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- endif -%}</p>
-    {%- if page.tags.size > 0 -%}
-    <p class="post-tags post-tags--header">
-      {%- for tag in page.tags -%}
-      <span class="post-tag">{{ tag }}</span>{%- unless forloop.last -%}<span class="post-tag-sep"> · </span>{%- endunless -%}
-      {%- endfor -%}
-    </p>
-    {%- endif -%}
   </header>
 
   <div class="share-links">
