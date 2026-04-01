@@ -42,4 +42,5 @@ defaults:
       path: ""
       type: post
     values:
+      layout: post
       tags: Other
