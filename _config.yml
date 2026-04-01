@@ -13,6 +13,10 @@ github_username: "53n90ku"
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
+header_pages:
+  - index.md
+  - archive.md
+  
 timezone: Asia/Kolkata
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
