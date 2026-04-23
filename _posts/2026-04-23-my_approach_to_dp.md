@@ -1,6 +1,10 @@
 ---
 tags : dp
 ---
+<style>
+  body { font-size: 0.8em; } 
+</style>
+
 # DP
 
 Dynamic programming is nothing but solving a bigger problem by dividing it into sub tasks and avoiding repitions in those subproblems, storing those  and building the answer from the smaller problems we solved beforehand
