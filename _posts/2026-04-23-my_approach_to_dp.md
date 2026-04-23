@@ -13,7 +13,7 @@ Dynamic programming is nothing but solving a bigger problem by dividing it into 
  - Do remember that we memorize the answers we had gotten i.e, storing them
 
 
- ### From what i can understand DP can be mainly classified into 5-6 types(it can be more or less, its just my preferred number)
+> **From what i can understand DP can be mainly classified into 5-6 types(it can be more or less, its just my preferred number)**
 
  > **1-D DP**
 
