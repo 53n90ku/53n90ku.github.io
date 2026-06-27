@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>53n90ku</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/typescript@5.5.4/lib/typescript.min.js"></script>
+    <script>
+      fetch("/src/main.ts")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Could not load /src/main.ts");
+          }
+
+          return response.text();
+        })
+        .then((source) => {
+          const output = window.ts.transpileModule(source, {
+            compilerOptions: {
+              module: window.ts.ModuleKind.ES2020,
+              target: window.ts.ScriptTarget.ES2020,
+            },
+          });
+          const script = document.createElement("script");
+          script.type = "module";
+          script.textContent = output.outputText;
+          document.body.append(script);
+        })
+        .catch((error) => {
+          document.querySelector("#app").textContent = error.message;
+        });
+    </script>
+  </body>
+</html>
